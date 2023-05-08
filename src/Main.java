@@ -29,8 +29,8 @@ public static void main(String[] args) {
 
 	 SwingUtilities.invokeLater(new Runnable() {
          public void run() {
-            SignInScreen signInScreen = new SignInScreen();
-             signInScreen.show();
+            FamiliesListApp familiesLists = new FamiliesListApp();
+             familiesLists.runLists();
          }
      });
 }

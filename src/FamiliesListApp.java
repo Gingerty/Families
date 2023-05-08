@@ -5,23 +5,10 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Base64;
 
-import com.google.auth.oauth2.GoogleCredentials;
-import com.google.firebase.FirebaseApp;
-import com.google.firebase.FirebaseOptions;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.ValueEventListener;
-import com.google.firebase.auth.FirebaseAuth;
-import com.google.api.client.http.GenericUrl;
-import com.google.api.client.http.HttpRequest;
-import com.google.api.client.http.HttpRequestFactory;
-import com.google.api.client.http.HttpResponse;
 import com.google.api.client.http.HttpTransport;
 import com.google.api.client.http.javanet.NetHttpTransport;
 import com.google.api.client.json.JsonFactory;
-import com.google.api.client.json.JsonObjectParser;
+
 import com.google.api.client.json.gson.GsonFactory;
 
 
@@ -534,7 +521,7 @@ public class FamiliesListApp extends Main {
         }
     }
 
-    public static void runLists() {
+    public void runLists() {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
                 FamiliesListApp app = new FamiliesListApp();
